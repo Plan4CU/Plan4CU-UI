@@ -10,7 +10,7 @@ import { ICourseSection } from '../models/course-section.model'
   providedIn: 'root',
 })
 export class CourseSectionService {
-  private baseUrl = 'http://localhost/courses_sections'; // Adjust the base URL as needed
+  private baseUrl = 'http://108.59.80.0:8000/courses_sections'; // Adjust the base URL as needed
 
   constructor(private http: HttpClient) {}
 
