@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgb(16, 128, 219);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a; /* Dark blue */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 25px 0;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    color: #1e3a8a; /* Dark blue for labels */
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #94a3b8; /* Light blue border */
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6; /* Blue button */
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #1e3a8a; /* Dark blue on hover */
+}
+
+#resultContainer {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #e0f2fe; /* Light blue background for results */
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    color: #1e3a8a; /* Dark blue for list items */
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
