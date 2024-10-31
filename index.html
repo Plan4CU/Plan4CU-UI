@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan4CU - Professor Course Lookup</title>
+    <title>Plan4CU - Professor & Course Lookup</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Plan4CU - Professor Course Lookup</h1>
+        <h1>Plan4CU - Professor & Course Lookup</h1>
         <div class="form-group">
-            <label for="professorName">Enter Professor's Name:</label>
-            <input type="text" id="professorName" placeholder="Professor Name">
-            <button id="submitBtn">Submit</button>
+            <label for="professorName">Search by Professor's Name:</label>
+            <input type="text" id="professorName" placeholder="Professor Name" autocomplete="off">
+            <div id="professorSuggestions" class="suggestions hidden"></div>
         </div>
+        <div class="form-group">
+            <label for="subjectName">Search by Course Name:</label>
+            <input type="text" id="subjectName" placeholder="Course Name" autocomplete="off">
+            <div id="subjectSuggestions" class="suggestions hidden"></div>
+        </div>
+        <button id="submitBtn">Submit</button>
+        <button id="resetBtn">Reset</button>
+
         <div id="resultContainer" class="hidden">
-            <h3>Courses Taught:</h3>
-            <ul id="courseList"></ul>
+            <ul id="resultList"></ul>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
