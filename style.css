@@ -1,43 +1,43 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f9fafb;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 50%;
+    max-width: 600px;
     margin: 50px auto;
-    background-color: rgb(16, 128, 219);
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #1e3a8a; /* Dark blue */
+    color: #1e3a8a;
     font-size: 28px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .form-group {
-    margin: 25px 0;
-    text-align: center;
+    margin: 20px 0;
+    position: relative;
 }
 
 label {
-    font-size: 18px;
-    color: #1e3a8a; /* Dark blue for labels */
+    font-size: 16px;
+    color: #1e3a8a;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 input {
-    width: 100%;
+    width: 95%;
     padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #94a3b8; /* Light blue border */
+    border: 1px solid #d1d5db;
     border-radius: 8px;
     font-size: 16px;
 }
@@ -45,23 +45,25 @@ input {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #3b82f6; /* Blue button */
+    background-color: #3b82f6;
     border: none;
     color: white;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #1e3a8a; /* Dark blue on hover */
+    background-color: #2563eb;
 }
 
 #resultContainer {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #e0f2fe; /* Light blue background for results */
+    background-color: #e5f4fe;
 }
 
 .hidden {
@@ -75,11 +77,29 @@ ul {
 
 li {
     font-size: 18px;
-    color: #1e3a8a; /* Dark blue for list items */
+    color: #1e3a8a;
     margin-bottom: 8px;
 }
 
-p {
-    font-size: 16px;
-    color: #555;
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 0 0 8px 8px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    color: #374151;
+}
+
+.suggestions div:hover {
+    background-color: #f1f5f9;
 }
